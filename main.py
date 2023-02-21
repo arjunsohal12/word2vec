@@ -50,17 +50,6 @@ m = Y.shape[1]
 Y_one_hot = np.zeros((vocab_size, m))
 Y_one_hot[Y.flatten(), np.arange(m)] = 1
 
-print(tokens)
-print(word_to_id)
-print(generate_training_data(tokens, word_to_id, 3))
-
-"""
-test = ["mother" , "Bloody", "Fuck"]
-
-for id, value in enumerate(test):
-    print(id, value)
-"""
-
 
 def initialize_wrd_emb(vocab_size, emb_size):
     """
